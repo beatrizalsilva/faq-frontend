@@ -1,0 +1,82 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.accordion {
+    width: 655px;
+    min-height: 347px;
+
+    background-color: white;
+    box-shadow: 0 27px 49px -25px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.accordion .illustration {
+    position: absolute;
+    left: -90px;
+}
+
+.content {
+    width: 90%;
+    padding-left: 225px;
+}
+
+.content h1 {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.items .item {
+    background-image: url(../imagens/seta-fechada.png);
+    background-repeat: no-repeat;
+    background-position: top 8px right 0;
+    background-size: 12px;
+
+    border-bottom: 1px solid #CCC;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.item h2 {
+    font-size: 17px;
+    font-weight: 500;
+
+    width: 90%;
+    padding-bottom: 15px;
+    transition: 0.2s ease;
+}
+
+.item h2:hover {
+    color: #F47C57;
+}
+
+.item p {
+    font-size: 15px;
+
+    display: none;
+    padding-bottom: 15px;
+}
+
+
+/* open question */
+.items .item.open {
+    background-image: url(../imagens/seta-aberta.png);
+}
+
+.item.open h2 {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.item.open p {
+    display: block;
+}

@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+html {
+    background-color: #E5E5E5;
+}
+
+.items {
+    list-style-type: none;
+}
